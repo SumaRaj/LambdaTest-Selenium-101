@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium101Suite" parallel="tests" thread-count="2">
+    
+    <test name="Windows Chrome Test">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="Windows 10"/>
+        <classes>
+            <!-- UPDATED TO MATCH YOUR PACKAGE -->
+            <class name="test.java.com.lambdatest.CertificationTest"/>
+        </classes>
+    </test>
+
+    <test name="Mac Safari Test">
+        <parameter name="browser" value="Safari"/>
+        <parameter name="version" value="latest"/>
+        <parameter name="platform" value="macOS Catalina"/>
+        <classes>
+            <!-- UPDATED TO MATCH YOUR PACKAGE -->
+            <class name="test.java.com.lambdatest.CertificationTest"/>
+        </classes>
+    </test>
+    
+</suite>
